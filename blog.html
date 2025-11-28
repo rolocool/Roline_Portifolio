@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Roline</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" class="logo-text">Roline</a>
+            </div>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="blog.html" class="nav-link active">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <label for="menu-toggle" class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+        </div>
+    </nav>
+
+    <main class="blog-main">
+        <!-- Blog Hero Section -->
+        <section class="blog-hero">
+            <div class="container">
+                <div class="blog-hero-content">
+                    <div class="section-label">Blog</div>
+                    <h1 class="blog-title">
+                        Insights on Technology,<br>
+                        <span class="highlight">Education & Innovation</span>
+                    </h1>
+                    <p class="blog-description">
+                        Sharing thoughts on machine learning, educational technology,
+                        and building impactful solutions in Rwanda and beyond.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Post -->
+        <section class="featured-post">
+            <div class="container">
+                <div class="featured-header">
+                    <h2 class="section-title">Featured Post</h2>
+                </div>
+                <article class="featured-article">
+                    <div class="featured-image">
+                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="AI in Education" />
+                        <div class="featured-badge">Featured</div>
+                    </div>
+                    <div class="featured-content">
+                        <div class="post-meta">
+                            <span class="post-category">AI & Education</span>
+                            <span class="post-date">November 25, 2024</span>
+                        </div>
+                        <h3 class="featured-title">
+                            Transforming Career Guidance Through AI-Powered Learning Simulations
+                        </h3>
+                        <p class="featured-excerpt">
+                            How we're bridging the career guidance gap in Rwanda by developing
+                            realistic workplace simulations that help job seekers understand
+                            different career paths and develop relevant skills.
+                        </p>
+                        <div class="post-tags">
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Educational Technology</span>
+                            <span class="tag">Rwanda</span>
+                        </div>
+                        <a href="#" class="read-more-btn">Read Full Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Blog Posts Grid -->
+        <section class="blog-posts">
+            <div class="container">
+                <div class="posts-header">
+                    <h2 class="section-title">Latest Posts</h2>
+                    <div class="blog-filters">
+                        <button class="filter-btn active" data-filter="all">All Posts</button>
+                        <button class="filter-btn" data-filter="tech">Technology</button>
+                        <button class="filter-btn" data-filter="education">Education</button>
+                        <button class="filter-btn" data-filter="career">Career</button>
+                        <button class="filter-btn" data-filter="nonprofit">Nonprofit</button>
+                    </div>
+                </div>
+
+                <div class="posts-grid">
+                    <article class="post-card" data-category="tech">
+                        <div class="post-image">
+                            <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Machine Learning" />
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-category">Technology</span>
+                                <span class="post-date">November 20, 2024</span>
+                            </div>
+                            <h3 class="post-title">
+                                Building Recommendation Systems for Career Guidance
+                            </h3>
+                            <p class="post-excerpt">
+                                A deep dive into how I built my final-year project: a recommendation
+                                system that matches students with potential career paths based on their
+                                skills and interests.
+                            </p>
+                            <div class="post-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">Machine Learning</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="post-card" data-category="education">
+                        <div class="post-image">
+                            <img src="https://images.unsplash.com/photo-1503428593586-e225b39bddfe?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Educational Technology" />
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-category">Education</span>
+                                <span class="post-date">November 15, 2024</span>
+                            </div>
+                            <h3 class="post-title">
+                                Creating Offline Learning Solutions During COVID-19
+                            </h3>
+                            <p class="post-excerpt">
+                                How we developed innovative offline coding exercises and peer tutoring
+                                networks when schools closed during the pandemic.
+                            </p>
+                            <div class="post-tags">
+                                <span class="tag">Educational Design</span>
+                                <span class="tag">Innovation</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="post-card" data-category="nonprofit">
+                        <div class="post-image">
+                            <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Born2Serve Initiative" />
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-category">Nonprofit</span>
+                                <span class="post-date">November 10, 2024</span>
+                            </div>
+                            <h3 class="post-title">
+                                Founding Born2Serve: Supporting Single Mothers in Rwanda
+                            </h3>
+                            <p class="post-excerpt">
+                                The story behind launching a 501(c)(3) nonprofit dedicated to
+                                empowering single mothers through education and skills development
+                                programs.
+                            </p>
+                            <div class="post-tags">
+                                <span class="tag">Social Impact</span>
+                                <span class="tag">Leadership</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="post-card" data-category="tech">
+                        <div class="post-image">
+                            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="SMS Technology" />
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-category">Technology</span>
+                                <span class="post-date">November 5, 2024</span>
+                            </div>
+                            <h3 class="post-title">
+                                Managing SMS Services at Scale: Lessons from Pindo
+                            </h3>
+                            <p class="post-excerpt">
+                                Insights into managing SMS sender ID registrations with RURA and
+                                building efficient communication systems for thousands of clients.
+                            </p>
+                            <div class="post-tags">
+                                <span class="tag">SMS Technology</span>
+                                <span class="tag">Client Management</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="post-card" data-category="career">
+                        <div class="post-image">
+                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Career Development" />
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-category">Career</span>
+                                <span class="post-date">October 30, 2024</span>
+                            </div>
+                            <h3 class="post-title">
+                                From Mastercard Foundation Scholar to Tech Leader
+                            </h3>
+                            <p class="post-excerpt">
+                                My journey from receiving educational support to creating opportunities
+                                for others through technology and nonprofit work.
+                            </p>
+                            <div class="post-tags">
+                                <span class="tag">Career Growth</span>
+                                <span class="tag">Scholarship</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="post-card" data-category="education">
+                        <div class="post-image">
+                            <img src="https://images.unsplash.com/photo-1606761568499-6d2451b23c66?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Learning Pathways" />
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-category">Education</span>
+                                <span class="post-date">October 25, 2024</span>
+                            </div>
+                            <h3 class="post-title">
+                                Designing Learning Pathways for Technical Roles
+                            </h3>
+                            <p class="post-excerpt">
+                                How we create comprehensive learning experiences for roles like QA
+                                Engineers and Security Analysts at BAG Technologies.
+                            </p>
+                            <div class="post-tags">
+                                <span class="tag">Instructional Design</span>
+                                <span class="tag">Technical Training</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="load-more-section">
+                    <button class="load-more-btn">Load More Posts</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter">
+            <div class="container">
+                <div class="newsletter-content">
+                    <div class="newsletter-text">
+                        <h3 class="newsletter-title">Stay Updated</h3>
+                        <p class="newsletter-description">
+                            Get the latest insights on technology, education, and innovation
+                            delivered to your inbox.
+                        </p>
+                    </div>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email address" class="newsletter-input">
+                        <button type="submit" class="newsletter-btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">Roline</div>
+                    <p class="footer-description">
+                        Building innovative solutions through technology<br>
+                        and educational excellence.
+                    </p>
+                </div>
+                <div class="footer-right">
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Roline. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
