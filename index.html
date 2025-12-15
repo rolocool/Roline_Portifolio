@@ -24,32 +24,35 @@
 <body>
 
 
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="#home">Roline</a>
-            </div>
-            
-            <input type="checkbox" id="menu-toggle" class="menu-toggle">
-            <label for="menu-toggle" class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-            
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
-                <li><a href="#about" class="nav-link" data-section="about">About</a></li>
-                <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
-                <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
-                <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
-                <li><a href="#testimonials" class="nav-link" data-section="testimonials">Testimonials</a></li>
-                <li><a href="#blog" class="nav-link" data-section="blog">Blog</a></li>
-                <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
-            </ul>
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">
+            <a href="#home">Roline</a>
         </div>
-    </nav>
+        
+        <!-- Checkbox for mobile toggle -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        
+        <!-- Hamburger label -->
+        <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        
+        <ul class="nav-menu">
+            <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+            <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+            <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+            <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+            <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+            <li><a href="#testimonials" class="nav-link" data-section="testimonials">Testimonials</a></li>
+            <li><a href="#blog" class="nav-link" data-section="blog">Blog</a></li>
+            <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
@@ -83,7 +86,7 @@
                             <span>Let's Collaborate</span>
                             <i class="fas fa-arrow-right"></i>
                         </button>
-                        <button class="cta-secondary" onclick="scrollToSection('projects')">
+                        <button class="cta-secondary" onclick="window.open('https://github.com/rolocool', '_blank')">
                             <span>View My Work</span>
                         </button>
                     </div>
@@ -154,7 +157,7 @@
                     </div>
                     
                     <div class="about-actions">
-                        <button class="btn-cv-download" onclick="downloadCV()">
+                        <button class="btn-cv-download" onclick="window.open('https://drive.google.com/file/d/1tAP_WFV02LLEb5XMyVuMiAF2-OyPTciu/view?usp=sharing', '_blank')">
                             <i class="fas fa-download"></i>
                             <span>Download CV</span>
                         </button>
@@ -206,15 +209,73 @@
             </div>
             
             <div class="projects-grid">
-                <!-- Project 1 -->
-                <article class="project-card" data-category="ai-ml education">
+                <!-- Project 5: Pady -->
+                <article class="project-card" data-category="web-dev nonprofit">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Career Guidance AI System">
+                        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="PADY Healthcare System">
                         <div class="project-overlay">
-                            <button class="btn-project-details" onclick="openProjectModal('project1')">
+                            <button class="btn-project-details" onclick="openProjectModal('project5')">
                                 <i class="fas fa-expand-arrows-alt"></i>
                                 View Details
                             </button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-type">Web Development • Healthcare</span>
+                            <span class="project-year">2025</span>
+                        </div>
+                        <h3 class="project-title">PADY - Electronic Health Records System</h3>
+                        <p class="project-description">
+                            Developed a healthcare application to reduce hospital wait times and streamline payment processes in Rwanda, featuring patient management, staff tracking, and secure reports.
+                            <br><a href="https://github.com/rolocool/Pady" target="_blank">GitHub</a> | <a href="https://pady-opal.vercel.app/" target="_blank">Live Demo</a>
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Vercel</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 6: Tracker -->
+                <article class="project-card" data-category="web-dev">
+                    <div class="project-image">
+                        <img src="https://www.fusioncharts.com/blog/wp-content/uploads/2013/10/FireShot-Screen-Capture-001-Dashboard-my_moneydashboard_com_Dashboard_aspx-616x457.png" alt="Personal Finance Tracker">
+                        <div class="project-overlay">
+                            <button class="btn-project-details" onclick="openProjectModal('project6')">
+                                <i class="fas fa-expand-arrows-alt"></i>
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-type">Web Development • Finance</span>
+                            <span class="project-year">2025</span>
+                        </div>
+                        <h3 class="project-title">Personal Finance Tracker</h3>
+                        <p class="project-description">
+                            Built a personal finance management tool to track balances, income, expenses, and transactions, with features for data export and customizable preferences.
+                            <br><a href="https://github.com/rolocool/tracker" target="_blank">GitHub</a> | <a href="https://tracker-woad-one.vercel.app/" target="_blank">Live Demo</a>
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Vercel</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+                    <article class="project-card" data-category="ai-ml education">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Career Guidance AI System">
+                            <div class="project-overlay">
+                                <button class="btn-project-details" onclick="openProjectModal('project1')">
+                                   <i class="fas fa-expand-arrows-alt"></i>
+                                   View Details
+                                </button>
                         </div>
                     </div>
                     <div class="project-content">
@@ -235,100 +296,12 @@
                         </div>
                     </div>
                 </article>
-                
-                <!-- Project 2 -->
-                <article class="project-card" data-category="education web-dev">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Learning Simulations Platform">
-                        <div class="project-overlay">
-                            <button class="btn-project-details" onclick="openProjectModal('project2')">
-                                <i class="fas fa-expand-arrows-alt"></i>
-                                View Details
-                            </button>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-meta">
-                            <span class="project-type">Educational Technology • Web Development</span>
-                            <span class="project-year">2024</span>
-                        </div>
-                        <h3 class="project-title">Interactive Learning Simulations Platform</h3>
-                        <p class="project-description">
-                            Built comprehensive learning experiences for technical roles including QA Engineers 
-                            and Security Analysts with realistic workplace scenarios and assessments.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Vue.js</span>
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">MongoDB</span>
-                            <span class="tech-tag">WebRTC</span>
-                        </div>
-                    </div>
-                </article>
-                
-                <!-- Project 3 -->
-                <article class="project-card" data-category="web-dev">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="SMS Analytics Dashboard">
-                        <div class="project-overlay">
-                            <button class="btn-project-details" onclick="openProjectModal('project3')">
-                                <i class="fas fa-expand-arrows-alt"></i>
-                                View Details
-                            </button>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-meta">
-                            <span class="project-type">Data Analytics • Web Development</span>
-                            <span class="project-year">2024</span>
-                        </div>
-                        <h3 class="project-title">SMS Service Analytics Dashboard</h3>
-                        <p class="project-description">
-                            Created a comprehensive analytics platform for tracking SMS service performance 
-                            at Pindo, featuring real-time metrics and client insights with RURA integration.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">R</span>
-                            <span class="tech-tag">Shiny</span>
-                            <span class="tech-tag">PostgreSQL</span>
-                            <span class="tech-tag">Docker</span>
-                        </div>
-                    </div>
-                </article>
-                
-                <!-- Project 4 -->
-                <article class="project-card" data-category="nonprofit web-dev">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Born2Serve Platform">
-                        <div class="project-overlay">
-                            <button class="btn-project-details" onclick="openProjectModal('project4')">
-                                <i class="fas fa-expand-arrows-alt"></i>
-                                View Details
-                            </button>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-meta">
-                            <span class="project-type">Nonprofit • Social Impact</span>
-                            <span class="project-year">2023-2024</span>
-                        </div>
-                        <h3 class="project-title">Born2Serve Nonprofit Platform</h3>
-                        <p class="project-description">
-                            Designed and developed the digital infrastructure for Born2Serve, supporting 
-                            single mothers and underprivileged students with education and skills development programs.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Express.js</span>
-                            <span class="tech-tag">Stripe</span>
-                            <span class="tech-tag">AWS</span>
-                        </div>
-                    </div>
-                </article>
-            </div>
         </div>
+    
+    
+    
     </section>
-
+                
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
@@ -639,327 +612,203 @@
     </section>
 
     <!-- Blog Section -->
-    <section id="blog" class="blog">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-label">Latest Insights</div>
-                <h2 class="section-title">Blog & Articles</h2>
-                <p class="section-description">
-                    Sharing thoughts on AI, education technology, and building impactful solutions
-                </p>
-            </div>
-            
-            <div class="blog-filters">
-                <button class="filter-btn active" data-filter="all">All Posts</button>
-                <button class="filter-btn" data-filter="ai-ml">AI/ML</button>
-                <button class="filter-btn" data-filter="education">Education</button>
-                <button class="filter-btn" data-filter="career">Career</button>
-                <button class="filter-btn" data-filter="nonprofit">Nonprofit</button>
-            </div>
-            
-            <div class="blog-grid">
-                <article class="blog-card featured" data-category="ai-ml education">
-                    <div class="blog-image">
-                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="AI in Education">
-                        <div class="blog-badge">Featured</div>
-                    </div>
-                    <div class="blog-content">
-                        <div class="blog-meta">
-                            <span class="blog-category">AI & Education</span>
-                            <span class="blog-date">Nov 28, 2024</span>
-                            <span class="blog-read-time">8 min read</span>
-                        </div>
-                        <h3 class="blog-title">
-                            Transforming Career Guidance Through AI-Powered Learning Simulations
-                        </h3>
-                        <p class="blog-excerpt">
-                            Exploring how artificial intelligence is revolutionizing career guidance in Rwanda, 
-                            bridging the gap between education and employment through personalized learning experiences...
-                        </p>
-                        <div class="blog-tags">
-                            <span class="tag">Machine Learning</span>
-                            <span class="tag">Educational Technology</span>
-                            <span class="tag">Career Guidance</span>
-                        </div>
-                        <button class="blog-read-more" onclick="openBlogPost('ai-career-guidance')">
-                            Read Full Article
-                            <i class="fas fa-arrow-right"></i>
-                        </button>
-                    </div>
-                </article>
-                
-                <article class="blog-card" data-category="education">
-                    <div class="blog-image">
-                        <img src="https://images.unsplash.com/photo-1503428593586-e225b39bddfe?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Educational Innovation">
-                    </div>
-                    <div class="blog-content">
-                        <div class="blog-meta">
-                            <span class="blog-category">Education</span>
-                            <span class="blog-date">Nov 22, 2024</span>
-                            <span class="blog-read-time">6 min read</span>
-                        </div>
-                        <h3 class="blog-title">
-                            Building Inclusive Learning Pathways for Technical Skills
-                        </h3>
-                        <p class="blog-excerpt">
-                            How we're designing comprehensive educational experiences that make technical 
-                            skills accessible to learners from diverse backgrounds...
-                        </p>
-                        <div class="blog-tags">
-                            <span class="tag">Instructional Design</span>
-                            <span class="tag">Accessibility</span>
-                        </div>
-                        <button class="blog-read-more" onclick="openBlogPost('inclusive-learning')">
-                            Read More
-                            <i class="fas fa-arrow-right"></i>
-                        </button>
-                    </div>
-                </article>
-                
-                <article class="blog-card" data-category="nonprofit">
-                    <div class="blog-image">
-                        <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Born2Serve Impact">
-                    </div>
-                    <div class="blog-content">
-                        <div class="blog-meta">
-                            <span class="blog-category">Nonprofit</span>
-                            <span class="blog-date">Nov 15, 2024</span>
-                            <span class="blog-read-time">5 min read</span>
-                        </div>
-                        <h3 class="blog-title">
-                            Supporting Single Mothers Through Technology and Education
-                        </h3>
-                        <p class="blog-excerpt">
-                            The story behind Born2Serve and how we're empowering single mothers 
-                            with digital skills and educational opportunities...
-                        </p>
-                        <div class="blog-tags">
-                            <span class="tag">Social Impact</span>
-                            <span class="tag">Digital Skills</span>
-                        </div>
-                        <button class="blog-read-more" onclick="openBlogPost('supporting-mothers')">
-                            Read More
-                            <i class="fas fa-arrow-right"></i>
-                        </button>
-                    </div>
-                </article>
-                
-                <article class="blog-card" data-category="career">
-                    <div class="blog-image">
-                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Career Development">
-                    </div>
-                    <div class="blog-content">
-                        <div class="blog-meta">
-                            <span class="blog-category">Career</span>
-                            <span class="blog-date">Nov 8, 2024</span>
-                            <span class="blog-read-time">7 min read</span>
-                        </div>
-                        <h3 class="blog-title">
-                            From Mastercard Scholar to Tech Leader: My Journey
-                        </h3>
-                        <p class="blog-excerpt">
-                            Reflecting on my path from receiving educational support to creating 
-                            opportunities for others through technology and leadership...
-                        </p>
-                        <div class="blog-tags">
-                            <span class="tag">Leadership</span>
-                            <span class="tag">Personal Growth</span>
-                        </div>
-                        <button class="blog-read-more" onclick="openBlogPost('my-journey')">
-                            Read More
-                            <i class="fas fa-arrow-right"></i>
-                        </button>
-                    </div>
-                </article>
-            </div>
-            
-            <div class="blog-cta">
-                <button class="btn-view-all-posts" onclick="showAllBlogPosts()">
-                    View All Posts
-                    <i class="fas fa-arrow-right"></i>
-                </button>
-            </div>
+<section id="blog" class="blog">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-label">Latest Insights</div>
+            <h2 class="section-title">Blog & Articles</h2>
+            <p class="section-description">
+                Sharing my thoughts on AI, educational technology, nonprofit impact, and the tech journey in Rwanda
+            </p>
         </div>
-    </section>
-
+        
+        <div class="blog-filters">
+            <button class="filter-btn active" data-filter="all">All Posts</button>
+            <button class="filter-btn" data-filter="ai-ml">AI/ML</button>
+            <button class="filter-btn" data-filter="education">Education</button>
+            <button class="filter-btn" data-filter="career">Career</button>
+            <button class="filter-btn" data-filter="nonprofit">Nonprofit</button>
+        </div>
+        
+        <div class="blog-grid">
+            <!-- Featured: AI & Education in Rwanda -->
+            <article class="blog-card featured" data-category="ai-ml education">
+                <div class="blog-image">
+                    <img src="https://africa.unwomen.org/sites/default/files/styles/webp_only/public/2025-08/agcci_rwanda_7.jpg.webp?itok=-Ehuu3rj" alt="Rwandan girls coding and learning AI through AGCCI program">
+                    <div class="blog-badge">Featured</div>
+                </div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span class="blog-category">AI & Education</span>
+                        <span class="blog-date">Dec 12, 2025</span>
+                        <span class="blog-read-time">8 min read</span>
+                    </div>
+                    <h3 class="blog-title">AI-Powered Career Guidance: Bridging Rwanda's Education-Employment Gap</h3>
+                    <p class="blog-excerpt">
+                        Exploring how machine learning and interactive simulations are helping Rwandan youth discover technical careers and close the skills divide...
+                    </p>
+                    <div class="blog-tags">
+                        <span class="tag">AI in Rwanda</span>
+                        <span class="tag">EdTech</span>
+                        <span class="tag">Youth Empowerment</span>
+                    </div>
+                    <button class="blog-read-more" onclick="openBlogPost('ai-rwanda')">
+                        Read Full Article <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </article>
+            
+            <!-- Education Focus -->
+            <article class="blog-card" data-category="education">
+                <div class="blog-image">
+                    <img src="https://www.ktpress.rw/wp-content/uploads/2021/02/Rwanda-Coding-Academy-2.jpg" alt="Students at Rwanda Coding Academy">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span class="blog-category">Education</span>
+                        <span class="blog-date">Dec 5, 2025</span>
+                        <span class="blog-read-time">6 min read</span>
+                    </div>
+                    <h3 class="blog-title">Inclusive Pathways to Technical Skills in Rwanda</h3>
+                    <p class="blog-excerpt">
+                        How we're creating accessible learning simulations for roles like QA engineers and security analysts, making tech careers reachable for all...
+                    </p>
+                    <div class="blog-tags">
+                        <span class="tag">Instructional Design</span>
+                        <span class="tag">Tech Education</span>
+                    </div>
+                    <button class="blog-read-more" onclick="openBlogPost('inclusive-pathways')">
+                        Read More <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </article>
+            
+            <!-- Nonprofit / Social Impact -->
+            <article class="blog-card" data-category="nonprofit">
+                <div class="blog-image">
+                    <img src="https://asanteafrica.org/wp-content/uploads/2024/08/Digital-LEarning-3.jpeg" alt="Digital skills training for youth in East Africa">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span class="blog-category">Nonprofit</span>
+                        <span class="blog-date">Nov 28, 2025</span>
+                        <span class="blog-read-time">5 min read</span>
+                    </div>
+                    <h3 class="blog-title">Born2Serve: Empowering Single Mothers with Digital Skills</h3>
+                    <p class="blog-excerpt">
+                        Reflections on founding Born2Serve and using technology to provide education and opportunities for single mothers in Rwanda...
+                    </p>
+                    <div class="blog-tags">
+                        <span class="tag">Social Impact</span>
+                        <span class="tag">Women in Tech</span>
+                    </div>
+                    <button class="blog-read-more" onclick="openBlogPost('born2serve')">
+                        Read More <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </article>
+            
+            <!-- Career Journey -->
+            <article class="blog-card" data-category="career">
+                <div class="blog-image">
+                    <img src="https://english.news.cn/20240420/9b4a45caefd34eb2a3bb905198ae2427/09ffeff3a808459aa07e256603d43f55.jpg" alt="Rwandan youth in tech education exchange">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span class="blog-category">Career</span>
+                        <span class="blog-date">Nov 20, 2025</span>
+                        <span class="blog-read-time">7 min read</span>
+                    </div>
+                    <h3 class="blog-title">From Mastercard Scholar to Building Rwanda's Tech Future</h3>
+                    <p class="blog-excerpt">
+                        My personal journey in Kigali's growing tech scene—from university to creating AI solutions and nonprofit initiatives...
+                    </p>
+                    <div class="blog-tags">
+                        <span class="tag">Personal Story</span>
+                        <span class="tag">Rwanda Tech</span>
+                    </div>
+                    <button class="blog-read-more" onclick="openBlogPost('my-journey')">
+                        Read More <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </article>
+        </div>
+        
+        <div class="blog-cta">
+            <a href="https://www.linkedin.com/in/umunyana-roline/" target="_blank" class="btn-view-all-posts">
+                Read More on LinkedIn <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</section>
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-label">Get In Touch</div>
-                <h2 class="section-title">Let's Build Something Amazing Together</h2>
-                <p class="section-description">
-                    Ready to collaborate on educational technology, AI projects, or social impact initiatives? 
-                    I'd love to hear from you.
-                </p>
-            </div>
-            
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Location</h4>
-                            <p>Kigali, Rwanda</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Email</h4>
-                            <p>munyanaroline@gmail.com</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Phone</h4>
-                            <p>+250 XXX XXX XXX</p>
-                        </div>
-                    </div>
-                    
-                    <div class="social-links">
-                        <a href="#" class="social-link" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="#" class="social-link" aria-label="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="#" class="social-link" aria-label="Twitter">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="social-link" aria-label="Medium">
-                            <i class="fab fa-medium"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <label for="name">Full Name</label>
-                        <input type="text" id="name" name="name" required>
-                        <span class="form-error" id="nameError"></span>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" required>
-                        <span class="form-error" id="emailError"></span>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <select id="subject" name="subject" required>
-                            <option value="">Select a topic</option>
-                            <option value="collaboration">Project Collaboration</option>
-                            <option value="consulting">Consulting Opportunity</option>
-                            <option value="speaking">Speaking Engagement</option>
-                            <option value="nonprofit">Nonprofit Partnership</option>
-                            <option value="other">Other</option>
-                        </select>
-                        <span class="form-error" id="subjectError"></span>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                        <span class="form-error" id="messageError"></span>
-                    </div>
-                    
-                    <button type="submit" class="btn-submit">
-                        <span class="btn-text">Send Message</span>
-                        <span class="btn-loading">
-                            <i class="fas fa-spinner fa-spin"></i>
-                            Sending...
-                        </span>
-                        <i class="fas fa-paper-plane"></i>
-                    </button>
-                </form>
-            </div>
+        <div class="contact-info">
+             <div class="contact-item">
+                  <div class="contact-icon">
+                      <i class="fas fa-map-marker-alt"></i>
+             </div>
+             <div class="contact-details">
+                  <h4>Location</h4>
+                  <p>Kigali, Rwanda</p>
+             </div>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <h3 class="footer-logo">Roline Umunyana</h3>
-                    <p class="footer-tagline">
-                        Building the future of education through AI and technology
+    
+        <div class="contact-item">
+             <div class="contact-icon">
+                 <i class="fas fa-envelope"></i>
+             </div>
+             <div class="contact-details">
+                  <h4>Email</h4>
+                   <p>
+                      <a href="mailto:munyanaroline@gmail.com" class="contact-link">
+                         munyanaroline@gmail.com
+                      </a>
                     </p>
-                </div>
-                
-                <div class="footer-links">
-                    <div class="footer-section">
-                        <h4>Quick Links</h4>
-                        <ul>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#projects">Projects</a></li>
-                            <li><a href="#experience">Experience</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <div class="footer-copyright">
-                    <p>&copy; 2024 Roline Umunyana. All rights reserved.</p>
-                </div>
-                <div class="footer-social">
-                    <a href="https://www.linkedin.com/in/umunyana-roline/" class="social-link">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="https://github.com/rolocool" class="social-link">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://x.com/RolineUmunyanaa" class="social-link">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                </div>
-            </div>
+             </div>
         </div>
-    </footer>
-
-    <!-- Project  -->
-    <div class="modal" id="projectModal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3 class="modal-title" id="modalTitle"></h3>
-                <button class="modal-close" onclick="closeModal('projectModal')">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-            <div class="modal-body" id="modalBody">
-            </div>
+    
+        <div class="contact-item">
+            <div class="contact-icon">
+            <i class="fas fa-phone"></i>
         </div>
-        <div class="modal-overlay" onclick="closeModal('projectModal')"></div>
+        <div class="contact-details">
+            <h4>Phone</h4>
+            <p>
+                <a href="tel:+250784362809" class="contact-link">
+                    +250 784 362 809
+                </a>
+            </p>
+        </div>
     </div>
-
-    <!-- Blog Post -->
-    <div class="modal" id="blogModal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3 class="modal-title" id="blogModalTitle"></h3>
-                <button class="modal-close" onclick="closeModal('blogModal')">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-            <div class="modal-body" id="blogModalBody">
-            </div>
-        </div>
-        <div class="modal-overlay" onclick="closeModal('blogModal')"></div>
+    
+    <div class="social-links">
+        <a href="https://www.linkedin.com/in/umunyana-roline/" class="social-link" aria-label="LinkedIn" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/rolocool" class="social-link" aria-label="GitHub" target="_blank">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://x.com/RolineUmunyanaa" class="social-link" aria-label="Twitter" target="_blank">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="mailto:munyanaroline@gmail.com" class="social-link" aria-label="Email" target="_blank">
+            <i class="fas fa-envelope"></i>
+        </a>
     </div>
+</div>
+<script>
+function scrollToSection(sectionId) {
+    const element = document.getElementById(sectionId);
+    if (element) {
+        const offset = 80;
+        const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+        const offsetPosition = elementPosition - offset;
 
-</body>
-</html>
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+        });
+    }
+}
+</script>
